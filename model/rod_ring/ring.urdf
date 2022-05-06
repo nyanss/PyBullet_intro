@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<robot name="cylinder">
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <mesh filename="_ring.obj" scale="0.2 0.2 0.2"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="_ring.obj" scale="0.2 0.2 0.2"/>
+      </geometry>
+    </collision>
+  </link>
+</robot>
