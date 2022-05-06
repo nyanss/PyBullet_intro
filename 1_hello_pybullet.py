@@ -25,7 +25,7 @@ cube = pb.loadURDF('cube.urdf', cubePos, cubeOrt)
 pb.setRealTimeSimulation(enableRealTimeSimulation=1)
 
 # 开始步进仿真
-'''while True:
+'''while pb.isConnected():
     pb.stepSimulation()
     time.sleep(1.0/240)'''
 
