@@ -1,5 +1,5 @@
 import pybullet as pb
-import pybullet_data as pbd
+import pybullet_data
 import time
 
 # 创建仿真环境，并打开图形界面
@@ -7,7 +7,7 @@ pysicsClient = pb.connect(pb.GUI)
 
 # 设置额外搜索路径，加载模型文件时会在工作路径和此路径下搜索
 # 该路径默认为：%python安装路径%/Lib/site-packages/pybullet_data/
-pb.setAdditionalSearchPath(pbd.getDataPath())
+pb.setAdditionalSearchPath(pybullet_data.getDataPath())
 
 # 设置仿真环境的重力
 pb.setGravity(0, 0, -10)

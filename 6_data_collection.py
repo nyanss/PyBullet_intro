@@ -1,10 +1,10 @@
 import pybullet as pb
-import pybullet_data as pbd
+import pybullet_data
 import time
 import matplotlib.pyplot as plt
 
 pysicsClient = pb.connect(pb.GUI)
-pb.setAdditionalSearchPath(pbd.getDataPath())
+pb.setAdditionalSearchPath(pybullet_data.getDataPath())
 pb.setGravity(0, 0, -10)
 
 plane = pb.loadURDF('plane.urdf')

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<robot name="cylinder">
+  <link name="base_link">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0.0" />
+      <geometry>
+        <mesh filename="_ring_vhacd.obj" scale="0.2 0.2 0.2"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0.0" />
+      <geometry>
+        <mesh filename="_ring_vhacd.obj" scale="0.2 0.2 0.2"/>
+      </geometry>
+    </collision>
+  </link>
+</robot>

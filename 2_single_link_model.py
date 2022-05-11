@@ -1,8 +1,8 @@
 import pybullet as pb
-import pybullet_data as pbd
+import pybullet_data
 
 pysicsClient = pb.connect(pb.GUI)
-pb.setAdditionalSearchPath(pbd.getDataPath())
+pb.setAdditionalSearchPath(pybullet_data.getDataPath())
 pb.setGravity(0, 0, -10)
 
 plane = pb.loadURDF('plane.urdf')

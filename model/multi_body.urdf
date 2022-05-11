@@ -1,0 +1,76 @@
+<?xml version="0.0" ?>
+<robot name="plane">
+    <link name="Base_link">
+        <visual>
+            <geometry>
+                <box size="2 0.4 0.2"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <box size="2 0.4 0.2"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="1">
+        <visual>
+            <origin xyz="1 0 0"/>
+            <geometry>
+                <box size="2 0.4 0.2"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="1 0 0"/>
+            <geometry>
+                <box size="2 0.4 0.2"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="2">
+        <visual>
+            <origin xyz="1 0 0"/>
+            <geometry>
+                <box size="2 0.4 0.2"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="1 0 0"/>
+            <geometry>
+                <box size="2 0.4 0.2"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="3">
+        <visual>
+            <origin xyz="1 0 0"/>
+            <geometry>
+                <box size="2 0.4 0.2"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="1 0 0"/>
+            <geometry>
+                <box size="2 0.4 0.2"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="1" type="continuous">
+        <parent link="Base_link"/>
+        <child link="1"/>
+        <axis xyz="0 0 1"/>
+        <origin xyz="1 0 0.2" rpy="0 0 1.5707963267948966"/>
+    </joint>
+    <joint name="2" type="continuous">
+        <parent link="1"/>
+        <child link="2"/>
+        <axis xyz="0 0 1"/>
+        <origin xyz="2 0 -0.2" rpy="0 0 1.5707963267948966"/>
+    </joint>
+    <joint name="3" type="continuous">
+        <parent link="2"/>
+        <child link="3"/>
+        <axis xyz="0 0 1"/>
+        <origin xyz="2 0 0.2" rpy="0 0 1.5707963267948966"/>
+    </joint>
+</robot>
